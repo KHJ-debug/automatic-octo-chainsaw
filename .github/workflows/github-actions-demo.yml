@@ -16,7 +16,7 @@ jobs:
         run: |
           set +e
           ls ${{ github.workspace }}
-          exit 1
+          gsutil help
           echo "intentional exit"
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Set up Python
